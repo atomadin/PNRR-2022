@@ -1,0 +1,35 @@
+#### Network Lasers
+
+Sequence to generate the network laser samples and calculate the spectrum:
+- 01_generation_graph.sh, random network generation in folders sample_001, sample_002, etc.
+- 02_script_copy.sh, script copying into the folders
+- 03_mat_gen.sh, initial analytical calculations
+- 04_rl_sequence_gold.sh, numerical calculation of spectrum
+(final result example in "sample_example" folder)
+
+In the "plot_single_sample" folder some tools to plot properties of a given network laser sample.
+
+The "stat.jl" script is to the statistical analysis over several network laser samples.
+
+
+# Network Lasers
+
+This repository contains scripts to generate and analyze network laser samples.
+
+## Workflow
+
+Sequence to generate the samples and calculate the spectrum:
+1. **01_generation_graph.sh** – Random network generation in folders `sample_001`, `sample_002`, etc.
+2. **02_script_copy.sh** – Copying the necessary scripts into the folders
+3. **03_mat_gen.sh** – Initial analytical calculations
+4. **04_rl_sequence_gold.sh** – Numerical calculation of the spectrum
+
+Final results for an example of network laser sample can be found in the folder `sample_example`.
+
+## Plotting
+
+In the `plot_single_sample` folder, there are tools to plot the properties of a given network laser sample.
+
+## Statistical Analysis
+
+The script `stat.jl` performs statistical analysis over several network laser samples.

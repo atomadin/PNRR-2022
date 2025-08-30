@@ -1,0 +1,5 @@
+# Ultrafast Third-Harmonic Generation
+
+Code to calculate electron thermalization in an ultrafast pump-probe experiment, and the tuning of the third-harmonic signal which is generated.
+
+Used for: Ghaebi et al. Adv. Sci. 2024, 11, 2401840

@@ -1,0 +1,106 @@
+&boltzmann_graphene_params
+just_check_electron_thermo = F
+just_check_eq_opt_cond = F
+just_check_spectral_density = F
+just_check_energy_few_steps = F
+/
+
+&band_structure_params
+factor_wavevector_mesh = 8
+define_symmetric_bz = T
+min_level_num_per_bin = 3
+absorption_M_point_eV = 4.65
+pseudo_gap_eV = 0.190
+/
+
+&phonon_modes_params
+phonon_wavevector_cutoff_use = T
+phonon_wavevector_cutoff_ratio = 0.5
+/
+
+&time_evolution_params
+time_max_fs = 301.0
+desired_timestep_fs = 0.2
+num_save_times = 71
+snapshot_times_fs = 10.0 25.0 50.0 300.0
+snapshot_all_times = F
+/
+
+&electron_distribution_params
+! initial state: (see parameters in namelists below)
+! 1 = equilibrium (fermi_dirac)
+! 2 = quasi-equilibrium with two chemical potentials (hot_electrons)
+! 3 = nonequilibrium with Gaussian peak/dip (photoexcited)
+initial_state = 3
+carrier_density_eq_cm = -2.0e+12
+temperature_eq_K = 300.0
+/
+
+&distro_fermi_dirac_params
+temperature_K = 300.0
+/
+
+&distro_hot_electrons_params
+photoexc_density_cm = 5.0
+temperature_K = 1000.0
+/
+
+&distro_photoexcited_params
+pump_wavelength_nm = 265.0
+pump_broadening_eV = 0.150
+photoexc_density_cm = 0.5
+use_fluence = T
+abs_fluence_uJ_cm = 10.0
+/
+
+&phonon_distribution_params
+temperature_ph_K = 300.0
+substrate_relaxation_fs = 200.0 ! 1200.0
+/
+
+&coulomb_scattering_params
+relative_eps_top = 1.0
+relative_eps_bottom = 2.1
+maximum_scatt_wavevector_nm_m_1 = 5.0  ! 5.0
+maximum_scatt_energy_eV = 2.0
+suppress_auger = F
+! screening model:
+! 1 = dynamic
+! 2 = time-dependent Thomas-Fermi
+! 3 = static
+! 4 = Thomas-Fermi
+screening_model = 4
+eta_lindhard_factor = 2.0
+thomasfermi_wv_nm = 4.0
+! electron energy broadening models:
+! 1 = uniform, constant
+! 2 = uniform, time-dependent
+! 3 = process-dependent, constant
+broadening_ee_model = 1
+broadening_ee_eV = 0.030
+gamma_freq_integral = F
+/
+
+&electron_phonon_scatt_params
+suppress_intraband = F
+suppress_interband = F
+electron_wavevec_cutoff_use = T
+electron_wavevec_cutoff_ratio = 0.7
+epc_speedup = 5.0
+dirac_point_average = T
+dirac_point_speedup = 5.0
+! phonon energy broadening models:
+! 1 = uniform, constant
+! 2 = process-dependent, constant
+broadening_ph_model = 1
+broadening_ph_eV = 0.010
+/
+
+&diff_transm_params
+probe_wavelengths_nm = 500.0 600.0 700.0 900.0 1000.0 1200.0
+use_band_defined_wavelengths = T
+broadening_eV = 0.200
+use_ee_screening = F
+/
+
+

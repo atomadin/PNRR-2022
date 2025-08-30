@@ -1,0 +1,5 @@
+Re_k_min = 5.0 + 3.0
+Re_k_max = 16.36 - 3.0
+
+const k_a = 10.68  # μm^(-1)D0 = mean(all_D0s_th_0) # Let consider D0 = mean value of non-int threshold
+const gamma_perp = 0.5 # μm^(-1) (c=1 units)

@@ -1,0 +1,12 @@
+# Quantum-Well Absorption Fitting
+
+Software for fitting quantum-well absorption parameters (carrier density and Lorentzian broadening) to experimental data.
+
+## Inputs
+- **Experimental data**: provided in the `11229_exp` folder
+- **Theoretical data (tight-binding)**: provided in the `InputData` folder
+
+## References
+
+- *Optical and structural properties of p-doped Ge/SiGe multiple quantum wells for mid-infrared photonics*, Phys. Rev. B
+- *Mid-infrared intersubband transitions in p-doped Si1–xGex parabolic quantum wells*, draft

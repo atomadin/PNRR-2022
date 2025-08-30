@@ -1,0 +1,6 @@
+# Project Description
+
+This project analyzes data from different samples.
+The sample to be analyzed is specified in `SAMPLE_NAME.txt`, located in the same folder as the Julia script.
+
+Example content of `SAMPLE_NAME.txt`:

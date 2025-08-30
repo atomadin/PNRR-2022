@@ -1,0 +1,4 @@
+# Boltzmann Graphene
+
+Solves the Boltzmann Equation on a hexagonal Brillouin Zone, representing electrons in graphene, and taking into account electron-phonon and electron-electron interactions.
+Calculates optical observables such as the differential transmission.
